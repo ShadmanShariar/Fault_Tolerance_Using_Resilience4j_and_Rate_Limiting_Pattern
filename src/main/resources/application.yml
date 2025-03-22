@@ -5,3 +5,9 @@ resilience4j:
         limit-for-period: 5  # Maximum number of calls allowed per period
         limit-refresh-period: 10s  # Refresh time for limit
         timeout-duration: 500ms  # How long to wait if limit is exceeded
+
+  retry:
+    instances:
+      myRetry:
+        max-attempts: 3
+        wait-duration: 500ms
