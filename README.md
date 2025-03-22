@@ -1,4 +1,4 @@
-# Fault Tolerance Using Resilience4j and Rate Limiting Pattern
+# Fault Tolerance Using Resilience4j and Rate Limiting, Retry Pattern
 
 ## Overview
 This project demonstrates how to implement fault tolerance in a Spring Boot application using **Resilience4j**. It includes key patterns such as **Circuit Breaker, Rate Limiting, Bulkhead, Retry, and TimeLimiter** to handle failures gracefully and improve system resilience.
