@@ -13,11 +13,12 @@ public class MyService {
     public String rateLimitFallback(Throwable throwable) {
         return "Rate limit exceeded. Please try again later.";
     }
+    @Retry(name = "myRetry", fallbackMethod = "retryFallback")
     public String processRequest2() {
         return "Request processed successfully!";
     }
 
-    public String rateLimitFallback2(Throwable throwable) {
+    public String retryFallback(Throwable throwable) {
         return "Please try again later.";
     }
 }
