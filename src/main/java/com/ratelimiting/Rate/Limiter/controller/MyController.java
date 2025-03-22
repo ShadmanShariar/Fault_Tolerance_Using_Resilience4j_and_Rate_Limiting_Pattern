@@ -19,5 +19,12 @@ public class MyController {
     public String limitedEndpoint() {
         return myService.processRequest();
     }
+    public int tryCount = 0;
+    @GetMapping("/limited2")
+    public String limitedEndpoint2() {
+        logger.info("tryCount: " + tryCount);
+        tryCount++;
+        return myService.processRequest2();
+    }
 }
 
