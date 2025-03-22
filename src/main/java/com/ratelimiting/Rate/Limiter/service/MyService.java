@@ -13,4 +13,11 @@ public class MyService {
     public String rateLimitFallback(Throwable throwable) {
         return "Rate limit exceeded. Please try again later.";
     }
+    public String processRequest2() {
+        return "Request processed successfully!";
+    }
+
+    public String rateLimitFallback2(Throwable throwable) {
+        return "Please try again later.";
+    }
 }
